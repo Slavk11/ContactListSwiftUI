@@ -12,15 +12,12 @@ struct ContactDetailsView: View {
     
     var body: some View {
         List {
-            VStack(alignment: .center) {
-                Image(systemName: "person.fill")
-                
-                    .font(.system(size: 200))
-                    .padding(.bottom, 20)
-                ContactView(person: person)
-                    .padding(.leading, 20)
-                
-            }
+            Image(systemName: "person.fill")
+                .font(.system(size: 200))
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .center)
+                .padding(.bottom, 20)
+            ContactView(person: person)
+                .padding(.leading, 20)
         }
         Spacer()
             .navigationBarTitle("\(person.fullName)")
