@@ -13,6 +13,10 @@
 		7977C8EB2A471D7B006096FD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7977C8EA2A471D7B006096FD /* Preview Assets.xcassets */; };
 		7977C8F22A471E21006096FD /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7977C8F12A471E21006096FD /* Person.swift */; };
 		7977C8F42A471E5C006096FD /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7977C8F32A471E5C006096FD /* DataStore.swift */; };
+		7977C8F62A472143006096FD /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7977C8F52A472143006096FD /* ContactsView.swift */; };
+		7977C8F82A47238C006096FD /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7977C8F72A47238C006096FD /* ListView.swift */; };
+		7977C8FE2A4733E7006096FD /* ContactDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7977C8FD2A4733E7006096FD /* ContactDetails.swift */; };
+		7977C9002A474FB2006096FD /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7977C8FF2A474FB2006096FD /* ContactView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,10 @@
 		7977C8EA2A471D7B006096FD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7977C8F12A471E21006096FD /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		7977C8F32A471E5C006096FD /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+		7977C8F52A472143006096FD /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
+		7977C8F72A47238C006096FD /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		7977C8FD2A4733E7006096FD /* ContactDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetails.swift; sourceTree = "<group>"; };
+		7977C8FF2A474FB2006096FD /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +65,12 @@
 			children = (
 				7977C8E32A471D7B006096FD /* ContactListSwiftUIApp.swift */,
 				7977C8E52A471D7B006096FD /* ContentView.swift */,
-				7977C8F12A471E21006096FD /* Person.swift */,
-				7977C8F32A471E5C006096FD /* DataStore.swift */,
+				7977C8F52A472143006096FD /* ContactsView.swift */,
+				7977C8FD2A4733E7006096FD /* ContactDetails.swift */,
+				7977C8F72A47238C006096FD /* ListView.swift */,
+				7977C8FF2A474FB2006096FD /* ContactView.swift */,
+				7977C8F92A4730EB006096FD /* Models */,
+				7977C8FA2A473112006096FD /* Services */,
 				7977C8E72A471D7B006096FD /* Assets.xcassets */,
 				7977C8E92A471D7B006096FD /* Preview Content */,
 			);
@@ -71,6 +83,22 @@
 				7977C8EA2A471D7B006096FD /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7977C8F92A4730EB006096FD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7977C8F12A471E21006096FD /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7977C8FA2A473112006096FD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7977C8F32A471E5C006096FD /* DataStore.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,7 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7977C8F62A472143006096FD /* ContactsView.swift in Sources */,
+				7977C8FE2A4733E7006096FD /* ContactDetails.swift in Sources */,
 				7977C8E62A471D7B006096FD /* ContentView.swift in Sources */,
+				7977C9002A474FB2006096FD /* ContactView.swift in Sources */,
+				7977C8F82A47238C006096FD /* ListView.swift in Sources */,
 				7977C8F42A471E5C006096FD /* DataStore.swift in Sources */,
 				7977C8F22A471E21006096FD /* Person.swift in Sources */,
 				7977C8E42A471D7B006096FD /* ContactListSwiftUIApp.swift in Sources */,
