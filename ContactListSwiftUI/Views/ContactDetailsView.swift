@@ -14,6 +14,7 @@ struct ContactDetailsView: View {
         VStack {
             Image(systemName: "person.fill")
                 .font(.system(size: 200))
+                .padding(.bottom, 20)
             ContactView(person: person)
                 .padding(.leading, 20)
             

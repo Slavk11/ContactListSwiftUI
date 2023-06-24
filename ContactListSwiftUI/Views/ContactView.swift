@@ -15,7 +15,7 @@ struct ContactView: View {
             HStack {
                 Image(systemName: "phone.fill")
                 Text("\(person.phoneNumber)")
-                    .padding([.top, .bottom], 20)
+                    .padding(.bottom, 20)
             }
             HStack {
                 Image(systemName: "envelope.fill")
