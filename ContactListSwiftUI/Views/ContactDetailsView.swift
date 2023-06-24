@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContactDetails: View {
+struct ContactDetailsView: View {
     let person: Person
     
     var body: some View {

@@ -15,7 +15,7 @@
 		7977C8F42A471E5C006096FD /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7977C8F32A471E5C006096FD /* DataStore.swift */; };
 		7977C8F62A472143006096FD /* ContactsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7977C8F52A472143006096FD /* ContactsView.swift */; };
 		7977C8F82A47238C006096FD /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7977C8F72A47238C006096FD /* ListView.swift */; };
-		7977C8FE2A4733E7006096FD /* ContactDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7977C8FD2A4733E7006096FD /* ContactDetails.swift */; };
+		7977C8FE2A4733E7006096FD /* ContactDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7977C8FD2A4733E7006096FD /* ContactDetailsView.swift */; };
 		7977C9002A474FB2006096FD /* ContactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7977C8FF2A474FB2006096FD /* ContactView.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,7 +29,7 @@
 		7977C8F32A471E5C006096FD /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		7977C8F52A472143006096FD /* ContactsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsView.swift; sourceTree = "<group>"; };
 		7977C8F72A47238C006096FD /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
-		7977C8FD2A4733E7006096FD /* ContactDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetails.swift; sourceTree = "<group>"; };
+		7977C8FD2A4733E7006096FD /* ContactDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailsView.swift; sourceTree = "<group>"; };
 		7977C8FF2A474FB2006096FD /* ContactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -44,6 +44,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		794A1E0A2A4770B20059335E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7977C8E72A471D7B006096FD /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		794A1E0B2A4771B00059335E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7977C8E52A471D7B006096FD /* ContentView.swift */,
+				7977C8F52A472143006096FD /* ContactsView.swift */,
+				7977C8FD2A4733E7006096FD /* ContactDetailsView.swift */,
+				7977C8F72A47238C006096FD /* ListView.swift */,
+				7977C8FF2A474FB2006096FD /* ContactView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		794A1E0C2A47721C0059335E /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7977C8E32A471D7B006096FD /* ContactListSwiftUIApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		7977C8D72A471D7B006096FD = {
 			isa = PBXGroup;
 			children = (
@@ -63,16 +91,12 @@
 		7977C8E22A471D7B006096FD /* ContactListSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				7977C8E32A471D7B006096FD /* ContactListSwiftUIApp.swift */,
-				7977C8E52A471D7B006096FD /* ContentView.swift */,
-				7977C8F52A472143006096FD /* ContactsView.swift */,
-				7977C8FD2A4733E7006096FD /* ContactDetails.swift */,
-				7977C8F72A47238C006096FD /* ListView.swift */,
-				7977C8FF2A474FB2006096FD /* ContactView.swift */,
+				794A1E0B2A4771B00059335E /* Views */,
 				7977C8F92A4730EB006096FD /* Models */,
 				7977C8FA2A473112006096FD /* Services */,
-				7977C8E72A471D7B006096FD /* Assets.xcassets */,
+				794A1E0A2A4770B20059335E /* Resources */,
 				7977C8E92A471D7B006096FD /* Preview Content */,
+				794A1E0C2A47721C0059335E /* App */,
 			);
 			path = ContactListSwiftUI;
 			sourceTree = "<group>";
@@ -172,7 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7977C8F62A472143006096FD /* ContactsView.swift in Sources */,
-				7977C8FE2A4733E7006096FD /* ContactDetails.swift in Sources */,
+				7977C8FE2A4733E7006096FD /* ContactDetailsView.swift in Sources */,
 				7977C8E62A471D7B006096FD /* ContentView.swift in Sources */,
 				7977C9002A474FB2006096FD /* ContactView.swift in Sources */,
 				7977C8F82A47238C006096FD /* ListView.swift in Sources */,

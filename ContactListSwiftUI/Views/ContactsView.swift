@@ -14,7 +14,7 @@ struct ContactsView: View {
     var body: some View {
         VStack {
             List(personList, id: \.fullName) { person in
-                NavigationLink(destination: ContactDetails(person: person)) {
+                NavigationLink(destination: ContactDetailsView(person: person)) {
                     Text("\(person.fullName)")
                 }
             }
